@@ -7,8 +7,8 @@ import Logout from './Auth/Logout'
 export default function Navigation() {
     const {currentUser} = useAuth()
   return (
-    <Navbar expand='md' bg='dark' variant='dark' sticky='top' className='p-3'>
-        <Navbar.Brand href='/'>Things To Do</Navbar.Brand>
+    <Navbar expand='md'  sticky='top' className='p-3 navBar'>
+        <Navbar.Brand id='mainLogo' href='/'>Things To Do</Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className='justify-content-end'>
             <Nav>

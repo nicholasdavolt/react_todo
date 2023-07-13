@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 // importing the react-router package
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -11,6 +12,7 @@ import Todos from './Components/Todos/Todos';
 import NotFound from './Components/NotFound';
 import AuthProvider from './contexts/AuthContext';
 import ProtectedRoute from './Components/ProtectedRoute';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
 
           </Routes>
         </Router>
+        <Footer/>
       </AuthProvider>
     </div>
   );

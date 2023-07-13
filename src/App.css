@@ -1,38 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
 .App {
+  background-color: #061940;
+  min-height: 83vh;
+  margin-bottom: 0 !important;
   text-align: center;
+  font-family: 'Tilt Neon', cursive;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #040DBF,
+      0 0 82px #040DBF,
+      0 0 92px #040DBF,
+      0 0 102px #040DBF,
+      0 0 151px #040DBF;
+  }
+
+.navBar {
+  background-color: #010A26;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#mainLogo {
+  
+  
+  font-size: 4em;
+  animation: pulsate 2.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-link {
+  color: #fff !important;
+
+}
+
+@keyframes pulsate {
+  100% {
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #040DBF,
+      0 0 82px #040DBF,
+      0 0 92px #040DBF,
+      0 0 102px #040DBF,
+      0 0 151px #040DBF;
+  }
+  0% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #040DBF,
+      0 0 45px #040DBF,
+      0 0 55px #040DBF,
+      0 0 70px #040DBF,
+      0 0 80px #040DBF;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  background-color: #010A26;
+  color: #fff;
 }

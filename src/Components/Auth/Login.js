@@ -2,6 +2,7 @@ import React from 'react'
 import { useAuth } from '../../contexts/AuthContext'
 import { Container, Card } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
+import './Login.css'
 
 export default function Login() {
 
@@ -19,15 +20,15 @@ export default function Login() {
 
   return (
     <div className="login">
-      <article className="bg-info mb-5 p-5 text-dark">
-        <h1 className="text-center">Welcome to the ToDo App!</h1>
+      <article className="mb-5 p-5">
+        <h1 className="mb-3 text-center">Welcome to Things To Do!</h1>
         <Container>
-          <Card className='m-2 border-dark text-center'>
-            <Card.Header className='bg-dark text-white'>
+          <Card className='m-2 card text-center'>
+            <Card.Header className=' cardHeader text-white'>
               <h2>Login for full functionality</h2>
             </Card.Header>
-            <Card.Body>
-              <button className="btn btn-success" onClick={() => handleAuth()}>
+            <Card.Body className='cardBody'>
+              <button className="btn btn-outline-primary" onClick={() => handleAuth()}>
                 Login with GitHub
               </button>
             </Card.Body>

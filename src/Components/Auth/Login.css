@@ -1,0 +1,55 @@
+div.login article {
+    
+    min-height: 64vh;
+}
+
+
+
+
+div.login .card {
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 
+    0 0 .2rem #fff, 
+    0 0 .2rem #fff, 
+    0 0 2rem #040DBF, 
+    0 0 .8rem #040DBF, 
+    0 0 2.8rem #040DBF, 
+    inset 0 0 1.3rem #040DBF;
+}
+
+div.login .cardHeader {
+    background-color: #010A26;
+    
+}
+
+div.login .cardHeader h2 {
+    
+}
+
+div.login .cardBody {
+    background-color: #061940;
+}
+
+div.login button {
+    color: #040DBF;
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 
+    0 0 .2rem #fff, 
+    0 0 .2rem #fff, 
+    0 0 2rem #040DBF, 
+    0 0 .8rem #040DBF, 
+    0 0 2.8rem #040DBF, 
+    inset 0 0 1.3rem #040DBF;
+
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 42px #040DBF,
+      0 0 82px #040DBF,
+      0 0 92px #040DBF;
+      
+
+    
+}
