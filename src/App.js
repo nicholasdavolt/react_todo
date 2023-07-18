@@ -22,10 +22,10 @@ function App() {
           <Navigation/>
 
           <Routes>
-            <Route path='/' element={<Todos/>}/>
+            <Route path='/' element={<Login/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/categories' element={<ProtectedRoute><Categories/></ProtectedRoute>}/>
-            <Route path='/todos' element={<Todos/>}/>
+            <Route path='/todos' element={<ProtectedRoute><Todos/></ProtectedRoute>}/>
             <Route path='*' element={<NotFound/>}/>
             
 

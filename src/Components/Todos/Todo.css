@@ -1,0 +1,83 @@
+section.todos {
+    min-height: 78vh;
+    
+}
+
+section.todos article.todoGallery {
+    padding: 2em 0 4em;
+}
+
+article.todoGallery div.singleTodo {
+    background-color: #010A26;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    padding: 0 0 2em;
+    height: 15em;
+    width: 30em;
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 
+    0 0 .2rem #fff, 
+    0 0 .2rem #fff, 
+    0 0 2rem #040DBF, 
+    0 0 .8rem #040DBF, 
+    0 0 2.8rem #040DBF, 
+    inset 0 0 1.3rem #040DBF;
+}
+
+div.singleTodo h3 {
+    
+    padding: .5em 0;
+    border-bottom: 4px solid #fff;
+    color: #fff;
+    
+}
+
+div.singleTodo p {
+    padding: 1em;
+}
+
+.singleTodo button {
+    position: absolute;
+    top: .5em;
+    font-size: 1.2em;
+    background: none;
+    color: #fff;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: .25s;
+}
+
+.singleTodo button#editLink {
+    left: .5em;
+}
+.singleTodo button#deleteLink {
+    right: .5em;
+}
+
+
+
+.singleTodo input {
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    bottom: 2em;
+}
+
+.todos button {
+    color: #fff;
+    border: 0.2rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 
+    0 0 .2rem #fff, 
+    0 0 .2rem #fff, 
+    0 0 2rem #040DBF, 
+    0 0 .8rem #040DBF, 
+    0 0 2.8rem #040DBF, 
+    inset 0 0 1.3rem #040DBF;
+
+    
+}

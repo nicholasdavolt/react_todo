@@ -1,6 +1,6 @@
 div.login article {
     
-    min-height: 64vh;
+    min-height: 70vh;
 }
 
 
@@ -23,9 +23,7 @@ div.login .cardHeader {
     
 }
 
-div.login .cardHeader h2 {
-    
-}
+
 
 div.login .cardBody {
     background-color: #010A26;
