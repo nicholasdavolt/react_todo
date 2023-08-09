@@ -8,7 +8,7 @@ export default function TodoForm(props) {
     
 
     const getCategories = () => {
-        axios.get(`https://localhost:7130/api/Categories`).then(response => {
+        axios.get(`http://todoapi.nicholasdavolt.com/api/Categories`).then(response => {
           console.log(response)
           setCategories(response.data)
         }) }
@@ -18,7 +18,7 @@ export default function TodoForm(props) {
         if(!props.todo) {
             const todoToCreate = values
 
-            axios.post(`https://localhost:7130/api/ToDo`, todoToCreate).then(() => {
+            axios.post(`http://todoapi.nicholasdavolt.com/api/ToDo`, todoToCreate).then(() => {
                 props.setShowCreate(false)
                 props.getTodos()
             })
@@ -35,7 +35,7 @@ export default function TodoForm(props) {
 
             console.log(todoToEdit)
 
-            axios.put(`https://localhost:7130/api/ToDo/${props.todo.toDoId}`, todoToEdit).then(() => {
+            axios.put(`http://todoapi.nicholasdavolt.com/api/ToDo/${props.todo.toDoId}`, todoToEdit).then(() => {
                 
                 props.setShowEdit(false)
                 props.getTodos()

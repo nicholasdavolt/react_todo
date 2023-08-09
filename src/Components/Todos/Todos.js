@@ -18,14 +18,14 @@ export default function Todos() {
   const [showComplete, setShowComplete] = useState(false);
 
   const getTodos =  () => {
-    axios.get(`https://localhost:7130/api/ToDo`).then(response => {
+    axios.get(`http://todoapi.nicholasdavolt.com/api/ToDo`).then(response => {
       console.log(response)
         setTodos(response.data)
     })
   }
 
   useEffect(() => {
-    axios.get(`https://localhost:7130/api/ToDo`).then(response => {
+    axios.get(`http://todoapi.nicholasdavolt.com/api/ToDo`).then(response => {
         console.log(response)
         setTodos(response.data)
       })

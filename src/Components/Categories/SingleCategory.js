@@ -13,7 +13,7 @@ export default function SingleCategory(props) {
 
   const deleteCat = (id) => {
     if (window.confirm(`Are you sure you want to delete ${props.category.categoryName}?`)) {
-      axios.delete(`https://localhost:7130/api/Categories/${id}`).then (() => props.getCategories())
+      axios.delete(`http://todoapi.nicholasdavolt.com/api/Categories/${id}`).then (() => props.getCategories())
     }
   }
 

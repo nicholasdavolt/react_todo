@@ -14,7 +14,7 @@ export default function SingleTodo(props) {
 
     const deleteTodo = (id) => {
       if(window.confirm(`Are you sure you want to delete ${props.todo.name}?`)) {
-        axios.delete(`https://localhost:7130/api/ToDo/${props.todo.toDoId}`).then(() => props.getTodos())
+        axios.delete(`http://todoapi.nicholasdavolt.com/api/ToDo/${props.todo.toDoId}`).then(() => props.getTodos())
       }
     }
 
@@ -29,7 +29,7 @@ export default function SingleTodo(props) {
     }
     console.log(todoToEdit)
 
-    axios.put(`https://localhost:7130/api/ToDo/${props.todo.toDoId}`, todoToEdit).then(() => {
+    axios.put(`http://todoapi.nicholasdavolt.com/api/ToDo/${props.todo.toDoId}`, todoToEdit).then(() => {
         setIsChecked(!props.todo.done)       
         props.getTodos()
         
